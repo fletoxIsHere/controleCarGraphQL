@@ -1,0 +1,5 @@
+input CarInput{
+    model:String
+    color:String
+    price:Float
+}
