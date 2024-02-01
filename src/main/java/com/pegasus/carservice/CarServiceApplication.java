@@ -27,6 +27,13 @@ public class CarServiceApplication {
                     .build();
 
             Car car2 = Car.builder()
+                    .model("Toyota Corolla")
+                    .color("Blue")
+                    .matricule("XYZ456")
+                    .price(22000.0f)
+                    .build();
+
+            Car car3 = Car.builder()
                     .model("Honda Civic")
                     .color("Blue")
                     .matricule("XYZ456")
@@ -35,6 +42,7 @@ public class CarServiceApplication {
 
             carRepository.save(car1);
             carRepository.save(car2);
+            carRepository.save(car3);
 
         };
     }

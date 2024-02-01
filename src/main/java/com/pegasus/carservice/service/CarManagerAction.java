@@ -46,10 +46,10 @@ public class CarManagerAction implements CarManager {
 
     @Override
     public CarDTO saveCar(CarDTO carDto) {
-        Optional<Car> existingCar = carRepository.findCarByMatricule(carDto.getMatricule());
-        if (existingCar.isPresent()) {
-            throw new IllegalStateException("A car with matricule " + carDto.getMatricule() + " already exists.");
-        }
+//        Optional<Car> existingCar = carRepository.findCarByMatricule(carDto.getMatricule());
+//        if (existingCar.isPresent()) {
+//            throw new IllegalStateException("A car with matricule " + carDto.getMatricule() + " already exists.");
+//        }
 
         return carMapper.fromCarToCarDto(carRepository.save(carMapper.fromCarDtoToCar(carDto)));
     }

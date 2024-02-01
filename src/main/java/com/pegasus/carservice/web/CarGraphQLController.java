@@ -31,8 +31,9 @@ public class CarGraphQLController {
         return carManager.saveCar(carDto);
     }
 
-    @QueryMapping
-    public void deleteCar(@Argument Long id) {
+    @MutationMapping
+    public Boolean deleteCar(@Argument Long id) {
         carManager.deleteCar(id);
+        return true;
     }
 }

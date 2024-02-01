@@ -1,5 +1,5 @@
 type Mutation{
-    savePerson(carDto: CarInput ):CarDTO
-    deleteCar(id:ID):CarDTO
+    saveCar(carDto: CarInput ):CarDTO
+    deleteCar(id: ID): Boolean
 
 }

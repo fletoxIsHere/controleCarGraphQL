@@ -1,7 +1,5 @@
 type CarDTO{
-
-     model:String
-   color:String
-     price:Float
-
+    model:String
+    color:String
+    price:Float
 }
